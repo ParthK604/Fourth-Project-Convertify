@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+      <div class="head"><h1><span style="font-size: 60px;">Convertify </h1></div>
+    </nav>
+    <div class="about">
+        <p>
+            Convertify is your all-in-one unit conversion tool designed for simplicity and speed. Whether you're converting length, weight, temperature, time, or speed — Convertify makes it easy with just a few clicks. No more complex formulas or manual math — just select your units, enter a value, and get instant, accurate results.
+        </p>
+    </div>
+    <h2 style="text-align: center; color: rgb(255, 255, 255); font-weight: 800; font-size: x-large; background-color: black;">Select A Unit</h2>
+    <div class="buttons">
+        <button id="length">Length 📏</button>
+        <button id="weight">Weight ⚖️</button>
+        <button id="area">Area 🏡</button>
+        <button id="speed">Speed 🏎️💨</button>
+        <button id="temperature">Temperature 🌡️</button>
+    </div>
+    <div class="output">
+     <div class="choose"></div>
+     <div class="input">
+        <div class="container">
+        <div class="from">
+            <span style="font-size: 20px; font-weight: bold; color: rgb(255, 255, 255); background-color: black;">From:</span>
+            <div class="inputfrom">
+                <input type="number" id="fromuser">
+                <select id="user" >
+                    <option value="blank1"></option>
+                    <option value="value1"></option>
+                    <option value="value2"></option>
+                    <option value="value3"></option>
+                </select>
+            </div>
+        </div>
+        <div class="to"><span style="font-size: 20px; font-weight: bold; color: rgb(255, 255, 255); background-color: black;">To:</span>
+        <div class="outputfrom">
+                <input type="text" readonly id="touser">
+                <select id="output" >
+                    <option value="blank2"></option>
+                    <option value="value4"></option>
+                    <option value="value5"></option>
+                    <option value="value6"></option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <button id="su_button">Convert</button>
+</div>
+<div class="result"></div>
+    <script src="script.js"></script>
+</body>
+</html>
