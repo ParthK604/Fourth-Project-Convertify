@@ -25,4 +25,4 @@
 Add support for more units (volume, time, currency, etc.)
 
 👨‍💻 Author
-Made with ❤️ by https://github.com/ParthK604
+Made with ❤️ by [Parth Kamath](https://github.com/ParthK604)
