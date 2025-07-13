@@ -37,12 +37,12 @@ btn1.addEventListener("click", function () {
         let fro=document.getElementById("user").value;
         let to=document.getElementById("output").value;
         let result;
-        if (fro==="Km" && to==="M")result=input*1000;
-        else if(fro==="M" && to==="Km")result=input/1000;
-        else if(fro==="M" && to==="Cm")result=input*100;
-        else if(fro==="Cm" && to==="M")result=input/100;
-        else if(fro==="Km"&& to==="Cm")result=input*100000;
-        else if(fro==="Cm"&& to==="Km")result=input/100000;
+        if (fro==="Km" && to==="M")result=(input*1000).toFixed(3);
+        else if(fro==="M" && to==="Km")result=(input/1000).toFixed(3);
+        else if(fro==="M" && to==="Cm")result=(input*100).toFixed(3);
+        else if(fro==="Cm" && to==="M")result=(input/100).toFixed(3);
+        else if(fro==="Km"&& to==="Cm")result=(input*100000).toFixed(3);
+        else if(fro==="Cm"&& to==="Km")result=(input/100000).toFixed(3);
         else if(fro===to)result=input;
         else result="INVALID";
 
@@ -78,12 +78,12 @@ btn2.addEventListener("click",function(){
         let fro=document.getElementById("user").value;
         let to=document.getElementById("output").value;
         let result;
-        if (fro==="Kg" && to==="g")result=input*1000;
-        else if(fro==="g" && to==="Kg")result=input/1000;
-        else if(fro==="Kg" && to==="Pd")result=input*2.20462;
-        else if(fro==="Pd" && to==="Kg")result=input/2.20462;
-        else if(fro==="g"&& to==="Pd")result=input*0.00220462;
-        else if(fro==="Pd"&& to==="g")result=input/0.00220462;
+        if (fro==="Kg" && to==="g")result=(input*1000).toFixed(3);
+        else if(fro==="g" && to==="Kg")result=(input/1000).toFixed(3);
+        else if(fro==="Kg" && to==="Pd")result=(input*2.20462).toFixed(3);
+        else if(fro==="Pd" && to==="Kg")result=(input/2.20462).toFixed(3);
+        else if(fro==="g"&& to==="Pd")result=(input*0.00220462).toFixed(3);
+        else if(fro==="Pd"&& to==="g")result=(input/0.00220462).toFixed(3);
         else if(fro===to)result=input;
         else result="INVALID";
 
@@ -124,12 +124,12 @@ btn3.addEventListener("click",function(){
         let fro=document.getElementById("user").value;
         let to=document.getElementById("output").value;
         let result;
-        if (fro==="msq" && to==="ftsq")result=input*10.7639;
-        else if(fro==="ftsq" && to==="msq")result=input/10.7639;
-        else if(fro==="msq" && to==="ac")result=input*0.000247105;
-        else if(fro==="ac" && to==="msq")result=input/0.000247105;
-        else if(fro==="ftsq" && to==="ac")result=input*2.2957e-5;
-        else if(fro==="ac" && to==="ftsq")result=input/2.2957e-5;
+        if (fro==="msq" && to==="ftsq")result=(input*10.7639).toFixed(3);
+        else if(fro==="ftsq" && to==="msq")result=(input/10.7639).toFixed(3);
+        else if(fro==="msq" && to==="ac")result=(input*0.000247105).toFixed(3);
+        else if(fro==="ac" && to==="msq")result=(input/0.000247105).toFixed(3);
+        else if(fro==="ftsq" && to==="ac")result=(input*2.2957e-5).toFixed(3);
+        else if(fro==="ac" && to==="ftsq")result=(input/2.2957e-5).toFixed(3);
         else if(fro===to)result=input;
         else result="INVALID";
 
@@ -167,12 +167,12 @@ btn4.addEventListener("click",function(){
         let fro=document.getElementById("user").value;
         let to=document.getElementById("output").value;
         let result;
-       if (fro === "kmh" && to === "ms") result = input * 0.27778;
-        else if (fro === "ms" && to === "kmh") result = input / 0.27778;
-        else if (fro === "kmh" && to === "mph") result = input * 0.621371;
-        else if (fro === "mph" && to === "kmh") result = input / 0.621371;
-        else if (fro === "mph" && to === "ms") result = input * 0.44704;
-        else if (fro === "ms" && to === "mph") result = input / 0.44704;
+       if (fro === "kmh" && to === "ms") result = (input * 0.27778).toFixed(3);
+        else if (fro === "ms" && to === "kmh") result = (input / 0.27778).toFixed(3);
+        else if (fro === "kmh" && to === "mph") result = (input * 0.621371).toFixed(3);
+        else if (fro === "mph" && to === "kmh") result = (input / 0.621371).toFixed(3);
+        else if (fro === "mph" && to === "ms") result = (input * 0.44704).toFixed(3);
+        else if (fro === "ms" && to === "mph") result = (input / 0.44704).toFixed(3);
         else if (fro === to) result = input;
         else result = "INVALID";
 
@@ -209,12 +209,12 @@ btn6.addEventListener("click",function(){
         let fro=document.getElementById("user").value;
         let to=document.getElementById("output").value;
         let result;
-       if (fro === "C" && to === "F") result = (input * 9/5) + 32;
-        else if(fro === "C" && to === "K") result = input + 273.15;
-        else if(fro === "F" && to === "C") result = (input - 32) * 5/9;
-        else if(fro === "F" && to === "K") result = ((input - 32) * 5/9) + 273.15;
-        else if(fro === "K" && to === "C") result = input - 273.15;
-        else if(fro === "K" && to === "F") result = ((input - 273.15) * 9/5) + 32;
+       if (fro === "C" && to === "F") result = ((input * 9/5) + 32).toFixed(3);
+        else if(fro === "C" && to === "K") result = (input + 273.15).toFixed(3);
+        else if(fro === "F" && to === "C") result = ((input - 32) * 5/9).toFixed(3);
+        else if(fro === "F" && to === "K") result = (((input - 32) * 5/9) + 273.15).toFixed(3);
+        else if(fro === "K" && to === "C") result = (input - 273.15).toFixed(3);
+        else if(fro === "K" && to === "F") result = (((input - 273.15) * 9/5) + 32).toFixed(3);
         else if(fro === to) result = input;
         else result = "INVALID";
 
