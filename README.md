@@ -12,8 +12,8 @@
 
 ## 📸 Preview
 
-![Convertify Screenshot](CF1.png)
-![Convertify Screenshot](CF2.png)
+![Convertify Screenshot](CFM1.png)
+![Convertify Screenshot](CFM2.png)
 
 ## 💻 Built With
 
